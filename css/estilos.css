@@ -127,7 +127,9 @@ footer p:last-child:after{
 #contenido .item{
 	background-color: white;
 	border-bottom: 3px solid #22BCE0;
-	overflow: hidden;
+	position: relative;
+	min-height: 133px;
+	margin-bottom: 2em;
 }
 #contenido .item .imagen_item {
 	float: left;
@@ -136,12 +138,13 @@ footer p:last-child:after{
 }	
 
 #contenido .item .imagen_item img{
-	width: 96px;
+	width: 82px;
 
 }
 
 #contenido .item .titulo_item{
 	font-size: 1.2em;
+	padding-top: 1em;
 }
 
 #contenido .item .titulo_item a{
@@ -163,6 +166,7 @@ footer p:last-child:after{
 
 #contenido .item .datos_item {
 	text-align: right;
+	margin-bottom: 1em;
 }
 
 #contenido .item .datos_item .tag_item{
@@ -172,6 +176,7 @@ footer p:last-child:after{
 	padding: 0.2em 0.5em;
 	border-radius: 0.5em;
 	float: left;
+
 	
 }
 
@@ -179,3 +184,14 @@ footer p:last-child:after{
 	color: #AAA;
 }
 
+#contenido .item .votacion{
+
+	position: absolute;
+	top: 100%;
+	width: 90%;
+	background-color: white;
+	left: 5%;
+	margin-top: 3px; 
+	border-radius: 5px;
+	padding: 0.2em 0.2em;
+}
