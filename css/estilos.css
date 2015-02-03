@@ -144,19 +144,24 @@ nav ul
 {
 	margin: 0;
 	margin-right: 100px;
-	padding: 0.5em 0;
 }
 nav ul #publicar
 {
 	background-color: #22BCE0;
 	border-radius: 10px;
-	box-shadow: 8px 8px 5px gray;
+	box-shadow: 3px 3px 20px gray;
 	font-style: italic;
-	padding: 0.8em 0 0.8em 0.2em;
+	padding: 0.4em 1em;
 	position: absolute;
 	right: 0.5em;
 	text-shadow: 2px 2px 5px gray;
-	top: -0.4em;
+	top: -0.3em;
+}
+nav ul #publicar a:hover
+{
+	background-color: #22BCE0;
+	cursor: pointer; 
+	transform: scale(1.1);
 }
 nav ul li
 {
@@ -166,8 +171,13 @@ nav ul li a
 {
 	color: white;
 	display: block;
-	padding: 0 0.3em;
+	padding: 0.5em 0.3em;
 	text-decoration: none;
+	transition: background 0.5s;
+}
+nav ul li a:hover
+{
+	background: #343B54;
 }
 video
 {
@@ -266,6 +276,26 @@ video
 {
 	float: right;
 	margin-right: 0.5em;
+}
+.formulario
+{
+	display: none;
+	margin: 1em 1em 0 0;
+	text-align: right;
+}
+.formulario input[type="text"],
+.formulario input[type="url"]
+{
+	border-radius: 5px;
+	padding: 0.2em 0.5em;
+}
+.formulario input[type="submit"]{
+	background-color: #22BCE0;
+	border-radius: 10px;
+	color: white;
+	font-style: italic;
+	text-shadow: 2px 2px 5px gray;
+	box-shadow: none;
 }
 
 @media screen and (min-width:800px){

@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Mi primer proyecto realmente profesional" />
-	<meta name="viewport" content="width=device-width, minimun-scale=1, maximun-scale=1" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<title>Puls2014</title>
 	<link rel="stylesheet"  href="css/normalize.css" />
 	<link rel="stylesheet"  href="css/estilos.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/miScript.js"></script>
 </head>
 <body>
 
@@ -27,11 +29,18 @@
 			<li><a href="#">JavaScript</a></li>
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">DJango</a></li>
-			<li id="publicar"><a href="#"  class="icon-lapiz">Publicar</a></li>
+			<li id="publicar"><a class="icon-lapiz">Publicar</a></li>
 
 		</ul>
 
 	</nav>
+	<form action="" id="formulario" class="formulario" >
+		<input type="text" placeholder="Titulo" id="titulo" required />
+		<input type="url" placeholder="Link" id="link" required />
+		<input type="submit" value="Agregar" id="Agregar"/>
+
+	</form>
+
 	<aside>
 		<video width="320" controls>
 			<source src="videos/Paciencia.mp4" type="video/mp4" />
