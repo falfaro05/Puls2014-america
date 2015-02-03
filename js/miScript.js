@@ -5,6 +5,8 @@ function inicio(){
 
 	$("#publicar").on("click", mostrarOcultar);
 	$("#formulario").on("submit", agregarPost);
+	$(".icon-arriba").on("click", likeUp);
+	$(".icon-abajo").on("click", likeDown);
 }
 
 function mostrarOcultar(){
@@ -35,3 +37,12 @@ function agregarPost(event){
 	clon.fadeIn();
 }
 
+function likeUp(event){
+	event.preventDefault();
+
+
+}
+
+function likeDown(event){
+	event.preventDefault();
+}
